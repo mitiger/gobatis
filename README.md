@@ -1,2 +1,2 @@
 # gobatis
-an orm like ibatis (ava) for golang
+an orm like ibatis(java) for golang
