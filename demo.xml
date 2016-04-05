@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapper namespace="account">
+	<Sql id ="insert">
+		<Query>
+			insert into user(id,account_id, email ,  username ,password, company_id, status, enabled, createtime , updatetime,avatar)
+			values
+			(?, ?,?,?,MD5(?),?,?,1,?, ?,?)
+		</Query>
+		<Args>{{.Id}}, {{.Id}}, {{.Email}},{{.UserName}}, {{.Password}}, {{.CompanyId}},{{.Status}},{{.CreateTime}}, {{.UpdateTime}},{{.Avatar}}</Args>
+	</Sql>
+</Mapper>
